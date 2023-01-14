@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="871.0" prefWidth="1300.0" style="-fx-background-color: F9CBC2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balopom.balopomproject.ProductOperationsTabController">
+   <children>
+      <Button fx:id="infoButton" blendMode="HARD_LIGHT" layoutX="1029.0" layoutY="598.0" mnemonicParsing="false" onAction="#infoButtonOnClick" style="-fx-background-color: D66650;" text="ℹ Bilgilendirme" textFill="WHITE" />
+      <TableView fx:id="mainTable" blendMode="MULTIPLY" editable="true" layoutX="71.0" layoutY="58.0" onMouseClicked="#setOnMouseClick" prefHeight="748.0" prefWidth="740.0" style="-fx-background-color: #AA3C26;">
+        <columns>
+          <TableColumn fx:id="pIdColumn" prefWidth="185.0" text="Ürün ID" />
+            <TableColumn fx:id="pNameColumn" prefWidth="185.0" text="Ürün İsmi" />
+            <TableColumn fx:id="pStockColumn" prefWidth="185.0" text="Ürün Stok Adedi (kg)" />
+            <TableColumn fx:id="pPriceColumn" prefWidth="185.0" text="Ürün Fiyatı (₺)" />
+        </columns>
+      </TableView>
+      <Label layoutX="894.0" layoutY="333.0" text="ID" />
+      <Label layoutX="894.0" layoutY="363.0" text="Ürün İsmi" />
+      <Label layoutX="894.0" layoutY="393.0" text="Stok Adedi" />
+      <Label layoutX="894.0" layoutY="423.0" text="Ürün Fiyatı" />
+      <TextField fx:id="pIdTextField" editable="false" layoutX="974.0" layoutY="329.0" prefHeight="25.0" prefWidth="215.0" />
+      <TextField fx:id="pNameTextField" layoutX="974.0" layoutY="359.0" prefHeight="25.0" prefWidth="215.0" />
+      <TextField fx:id="pStockTextField" layoutX="974.0" layoutY="389.0" prefHeight="25.0" prefWidth="215.0" />
+      <TextField fx:id="pPriceTextField" layoutX="974.0" layoutY="419.0" prefHeight="25.0" prefWidth="215.0" />
+      <Button blendMode="HARD_LIGHT" layoutX="974.0" layoutY="454.0" mnemonicParsing="false" onAction="#addProductOnClick" style="-fx-background-color: D66650;" text="➕ Ürün Ekle" textFill="WHITE" />
+      <Button blendMode="HARD_LIGHT" layoutX="1063.0" layoutY="454.0" mnemonicParsing="false" onAction="#deleteProductDataOnClick" style="-fx-background-color: D66650;" text="🗑 Seçili Ürünü Sil" textFill="WHITE" />
+      <Button blendMode="HARD_LIGHT" layoutX="1095.0" layoutY="518.0" mnemonicParsing="false" onAction="#refreshTableOnClick" style="-fx-background-color: D66650;" text="🔄 Tabloyu Yenile" textFill="WHITE" />
+      <Button blendMode="HARD_LIGHT" layoutX="975.0" layoutY="518.0" mnemonicParsing="false" onAction="#saveTableOnClick" style="-fx-background-color: D66650;" text="💾 Tabloyu Kaydet" textFill="WHITE" />
+      <Button blendMode="HARD_LIGHT" layoutX="974.0" layoutY="486.0" mnemonicParsing="false" onAction="#updateSelectedProduct" style="-fx-background-color: D66650;" text="⬆ Seçili Ürünü Güncelle" textFill="WHITE" />
+      <Button blendMode="HARD_LIGHT" layoutX="1004.0" layoutY="781.0" mnemonicParsing="false" onAction="#returnToLoginPage" style="-fx-background-color: D66650;" text="Giriş Sayfasına Geri Dön" textFill="WHITE" />
+   </children>
+</AnchorPane>

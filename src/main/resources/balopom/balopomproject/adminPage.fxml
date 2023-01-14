@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balopom.balopomproject.AdminPageController">
+  <tabs>
+    <Tab text="Kullanıcı İşlemleri">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="871.0" prefWidth="1300.0" />
+        <fx:include source="userOperationsTab.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Ürün İşlemleri">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="871.0" prefWidth="1300.0" />
+        <fx:include source="productOperationsTab.fxml" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

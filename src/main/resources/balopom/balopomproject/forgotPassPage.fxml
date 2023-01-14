@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balopom.balopomproject.ForgotPassPageController">
+    <top>
+        <AnchorPane prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: F48168;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="134.0" layoutY="40.0" text="Balopom Giriş Paneli" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <bottom>
+        <AnchorPane prefHeight="450.0" prefWidth="400.0" style="-fx-background-color: F9CBC2;" BorderPane.alignment="CENTER">
+            <children>
+                <Pane layoutY="-19.0" prefHeight="39.0" prefWidth="400.0" style="-fx-background-color: F6A493;" />
+                <Label layoutX="68.0" layoutY="140.0" text="Email" />
+                <Button fx:id="bringInfoButton" alignment="CENTER" blendMode="HARD_LIGHT" contentDisplay="CENTER" layoutX="133.0" layoutY="179.0" mnemonicParsing="false" onAction="#showInfo" style="-fx-background-color: D66650;" text="Hesap Bilgilerimi Getir" textFill="WHITE" />
+                <TextField fx:id="emailTextField" layoutX="151.0" layoutY="136.0" prefHeight="25.0" prefWidth="181.0" promptText="Email Adresinizi Giriniz" />
+            <Button fx:id="returnHomeButton" alignment="CENTER" blendMode="HARD_LIGHT" contentDisplay="CENTER" layoutX="143.0" layoutY="213.0" mnemonicParsing="false" onAction="#returnHomePage" style="-fx-background-color: D66650;" text="Giriş Ekranına Dön" textFill="WHITE" />
+            <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="37.0" prefHeight="17.0" prefWidth="392.0" textFill="RED" />
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

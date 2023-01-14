@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="871.0" prefWidth="1300.0" style="-fx-background-color: F9CBC2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balopom.balopomproject.UserOperationsTabController">
+   <children>
+      <ListView fx:id="listView" blendMode="MULTIPLY" editable="true" layoutX="76.0" layoutY="62.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#setOnMouseClicked" prefHeight="748.0" prefWidth="740.0" style="-fx-background-color: #AA3C26;" />
+      <Button blendMode="HARD_LIGHT" layoutX="1004.0" layoutY="781.0" mnemonicParsing="false" onAction="#returnToLoginPage" style="-fx-background-color: D66650;" text="Giriş Sayfasına Geri Dön" textFill="WHITE" />
+      <TextField fx:id="idTextField" editable="false" layoutX="982.0" layoutY="436.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="usernameTextField" editable="false" layoutX="982.0" layoutY="467.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="passwordTextField" editable="false" layoutX="982.0" layoutY="498.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="emailTextField" editable="false" layoutX="982.0" layoutY="528.0" prefHeight="25.0" prefWidth="234.0" />
+      <Label layoutX="905.0" layoutY="440.0" prefHeight="17.0" prefWidth="65.0" text="ID" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="905.0" layoutY="471.0" text="Kullanıcı Adı" />
+      <Label layoutX="905.0" layoutY="502.0" prefHeight="17.0" prefWidth="65.0" text="Şifre" />
+      <Label layoutX="905.0" layoutY="532.0" prefHeight="17.0" prefWidth="65.0" text="Email" />
+      <Button blendMode="HARD_LIGHT" layoutX="1029.0" layoutY="721.0" mnemonicParsing="false" onAction="#showInfoOnClick" style="-fx-background-color: D66650;" text="ℹ Bilgilendirme" textFill="WHITE" />
+   </children>
+</AnchorPane>
